@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 * {
   box-sizing: border-box; }
 
 html, body {
   font-size: 10px;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   height: 100%; }
 
@@ -11,4 +13,22 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%; }
+  padding: 6rem 3rem; }
+
+.content {
+  text-align: center; }
+  .content-heading-light {
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 0; }
+  .content-heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 0; }
+  .content-description {
+    font-size: 1.5rem;
+    line-height: 2.5rem; }
+
+.card {
+  border: 1px solid #333;
+  padding: 2rem; }
