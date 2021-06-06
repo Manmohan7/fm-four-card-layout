@@ -2,19 +2,23 @@
   text-align: center;
 
   &-heading-light {
+    color: color(dark-blue);
     font-size: 2.5rem;
     font-weight: 200;
     margin: 0;
   }
 
   &-heading {
+    color: color(dark-blue);
     font-size: 2.5rem;
     font-weight: 600;
     margin: 0;
   }
 
   &-description {
+    color: color(gray-blue);
     font-size: 1.5rem;
     line-height: 2.5rem;
+    margin: 1.5rem 0 0;
   }
 }

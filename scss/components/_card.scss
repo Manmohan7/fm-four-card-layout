@@ -1,6 +1,35 @@
 .card {
-  border: 1px solid #333;
-  padding: 2rem;
+  background-color: white;
+  padding: 2.4rem;
+  border-radius: .5rem;
+  margin: 3rem 0;
+  box-shadow: 0px 10px 10px 0px #ccc;
 
+  &-heading {
+    color: color(dark-blue);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: .3rem;
+  }
 
+  &-description {
+    color: color(gray-blue);
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    margin-bottom: 3rem;
+  }
+
+  &-image {
+    text-align: right;
+
+    img {
+      width: 5.5rem;
+    }
+  }
+}
+
+@each $key, $val in $border-colors {
+  .card-#{$key} {
+    border-top: 0.5rem solid $val;
+  }
 }
