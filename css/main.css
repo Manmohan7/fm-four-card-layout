@@ -23,49 +23,87 @@ html, body {
     font-size: 2.5rem;
     font-weight: 200;
     margin: 0; }
+    @media (min-width: 992px) {
+      .content-heading-light {
+        font-size: 3.6rem; } }
   .content-heading {
     color: #4c4e61;
     font-size: 2.5rem;
     font-weight: 600;
     margin: 0; }
+    @media (min-width: 992px) {
+      .content-heading {
+        font-size: 3.6rem; } }
   .content-description {
     color: #a3a5ae;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    margin: 1.5rem 0 0; }
+    margin: 1.5rem auto 0; }
+    @media (min-width: 768px) {
+      .content-description {
+        max-width: 60%; } }
 
 .cards {
-  margin-top: 4rem; }
+  margin-top: 6rem; }
+  @media (min-width: 992px) {
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(20rem, 35rem));
+      align-items: center;
+      gap: 3rem; } }
+
+.card-group {
+  display: flex;
+  flex-direction: column; }
 
 .card {
   background-color: white;
-  padding: 2.4rem;
-  border-radius: .5rem;
-  margin: 3rem 0;
-  box-shadow: 0px 10px 10px 0px #ccc; }
+  padding: 3rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0px 10px 20px 0px #d9dff2;
+  position: relative;
+  overflow: hidden; }
+  @media (min-width: 992px) {
+    .card {
+      margin: 1.5rem 0;
+      padding: 3.4rem; } }
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 0.5rem;
+    width: 100%; }
   .card-heading {
     color: #4c4e61;
     font-size: 2rem;
     font-weight: 600;
     margin-bottom: .3rem; }
+    @media (min-width: 992px) {
+      .card-heading {
+        margin-bottom: 0.6rem; } }
   .card-description {
     color: #a3a5ae;
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: 1.3rem;
+    line-height: 2.6rem;
     margin-bottom: 3rem; }
   .card-image {
     text-align: right; }
     .card-image img {
       width: 5.5rem; }
+      @media (min-width: 992px) {
+        .card-image img {
+          width: 6.5rem; } }
 
-.card-1 {
-  border-top: 0.5rem solid #45d3d3; }
+.card-1::before {
+  background-color: #45d3d3; }
 
-.card-2 {
-  border-top: 0.5rem solid #ea5353; }
+.card-2::before {
+  background-color: #ea5353; }
 
-.card-3 {
-  border-top: 0.5rem solid #fcaf4a; }
+.card-3::before {
+  background-color: #fcaf4a; }
 
-.card-4 {
-  border-top: 0.5rem solid #549ef2; }
+.card-4::before {
+  background-color: #549ef2; }
